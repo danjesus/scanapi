@@ -199,7 +199,16 @@ class TestEndpointNode:
 
             mock_validate_keys.assert_called_with(
                 keys,
-                ("endpoints", "headers", "name", "params", "path", "requests", "delay"),
+                (
+                    "endpoints",
+                    "headers",
+                    "name",
+                    "params",
+                    "path",
+                    "requests",
+                    "delay",
+                    "vars",
+                ),
                 ("name",),
                 "endpoint",
             )
